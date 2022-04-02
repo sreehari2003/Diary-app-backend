@@ -39,3 +39,12 @@ exports.createDiary = catchAsync(async (req, res, next) => {
     response: "diary was saved",
   });
 });
+
+exports.deletDiary = catchAsync(async (req, res, next) => {
+  const { source } = req.body;
+  await diary.findByIdAndDelete(source);
+  res.status(200).json({
+    ok: true,
+    message: "Diary deleted",
+  });
+});
