@@ -8,6 +8,7 @@ router.route("/auth/login").post(authController.login);
 router
   .route("/diary/:id")
   .get(authController.protect, diaryControl.getAllDiary)
-  .post(authController.protect, diaryControl.createDiary);
+  .post(authController.protect, diaryControl.createDiary)
+  .delete(diaryControl.deletDiary);
 
 module.exports = router;

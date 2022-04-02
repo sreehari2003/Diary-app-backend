@@ -34,7 +34,7 @@ const userSchema = new mongoose.Schema({
     {
       //connecting the user object to the database
       type: Schema.Types.ObjectId,
-      ref: "Diary",
+      ref: "diary",
     },
   ],
 });
