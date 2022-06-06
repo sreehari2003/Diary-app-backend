@@ -42,5 +42,39 @@
  </tr>
 </table>
 
-<h4>to run after congig file setup run</h4>
-<code>npm run dev<code/>
+<h4>to run after config file setup run</h4>
+<code>npm run dev</code>
+
+## routes
+
+signup : POST
+
+```
+/api/auth/signup
+```
+
+Login : POST
+
+```
+/api/auth/login
+```
+
+## Protected Routes
+
+getAllDiary : GET
+
+```
+/api/diary/:id
+```
+
+CreateDiary : POST
+
+```
+/api/diary/:id
+```
+
+DeleteDiary : DELETE
+
+```
+/api/diary/:id
+```
